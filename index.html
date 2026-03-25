@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Overlay Example</title>
+  <style>
+    .container {
+      position: relative;       /* sets the stage */
+      width: 600px;
+      height: 400px;
+    }
+
+    .background {
+      width: 100%;
+      height: 100%;
+    }
+
+    .overlay-text {
+      position: absolute;       /* floats above */
+      top: 50%;                 /* vertical position */
+      left: 50%;                /* horizontal position */
+      transform: translate(-50%, -50%); /* center it */
+      color: #ff0066;           /* neon pink text */
+      font-size: 32px;
+      font-family: 'Arial', sans-serif;
+      text-shadow: 0 0 10px #ff0066; /* glowing effect */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="background.jpg" class="background">
+    <div class="overlay-text">Cosmic Meme Portal</div>
+  </div>
+</body>
+</html>
