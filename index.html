@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- makes it mobile-friendly -->
   <title>My Profile</title>
   <style>
     /* Hide unwanted repo/nickname header */
@@ -12,7 +13,7 @@
     .container {
       position: relative;
       width: 100%;
-      max-width: 800px;   /* adjust size */
+      max-width: 1000px;   /* limit width on big screens */
       margin: auto;
     }
 
@@ -23,25 +24,4 @@
     }
 
     .overlay-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #ff0066;              /* neon pink */
-      font-size: 32px;
-      font-family: 'Arial', sans-serif;
-      text-shadow: 0 0 10px #ff0066; /* glowing effect */
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <!-- This line is hidden by CSS -->
-  <h1 class="repo-title">username.github.io</h1>
-
-  <div class="container">
-    <img src="background.jpg" class="background">
-    <div class="overlay-text">Cosmic Meme Portal</div>
-  </div>
-</body>
-</html>
+      position
