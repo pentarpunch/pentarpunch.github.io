@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Text Overlay Example</title>
+  <title>My Profile</title>
   <style>
+    /* Hide unwanted repo/nickname header */
+    h1.repo-title {
+      display: none;
+    }
+
+    /* Container for background + overlay */
     .container {
-      position: relative;       /* sets the stage */
-      width: 600px;
-      height: 400px;
+      position: relative;
+      width: 100%;
+      max-width: 800px;   /* adjust size */
+      margin: auto;
     }
 
     .background {
       width: 100%;
-      height: 100%;
+      height: auto;
+      display: block;
     }
 
     .overlay-text {
-      position: absolute;       /* floats above */
-      top: 50%;                 /* vertical position */
-      left: 50%;                /* horizontal position */
-      transform: translate(-50%, -50%); /* center it */
-      color: #ff0066;           /* neon pink text */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ff0066;              /* neon pink */
       font-size: 32px;
       font-family: 'Arial', sans-serif;
       text-shadow: 0 0 10px #ff0066; /* glowing effect */
+      text-align: center;
     }
   </style>
 </head>
 <body>
+  <!-- This line is hidden by CSS -->
+  <h1 class="repo-title">username.github.io</h1>
+
   <div class="container">
     <img src="background.jpg" class="background">
     <div class="overlay-text">Cosmic Meme Portal</div>
